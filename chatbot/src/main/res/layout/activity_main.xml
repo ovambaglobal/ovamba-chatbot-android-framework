@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dell13.chatbotdummy.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/head"
+        android:visibility="gone"
+        android:background="@color/colorPrimary">
+        <TextView android:id="@+id/headertext"
+            android:layout_width="wrap_content"
+            android:text="ChatBot"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/typestatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bot is  typing"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/head"
+        android:padding="2dp"
+        android:gravity="center"/>
+    <ListView
+        android:id="@+id/chat_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_above="@+id/form"
+        android:layout_below="@+id/typestatus"
+
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/chat_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           android:layout_toLeftOf="@+id/send"
+            android:inputType="text" />
+        <ImageView android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:layout_alignBottom="@+id/chat_editText"
+            android:layout_alignTop="@+id/chat_editText"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

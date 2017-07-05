@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themecolor">#009688</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorAccent">#009688</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorControlNormal">#009688</color>
+    <color name="colorControlActivated">#009688</color>
+    <color name="colorSwitchThumbNormal">#009688</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.sample.chatbotlib.CircleImageView
+            android:id="@+id/image_view"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:border_width="2dp"
+            app:border_color="@android:color/white"
+            android:src="@drawable/chat_bot"/>
+        <ImageView android:id="@+id/edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+        android:layout_below="@+id/image_view"
+            android:src="@drawable/edit_img"
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/msg_in"
+            tools:text="Hello "
+            android:textColor="@android:color/primary_text_light" />
+        <RelativeLayout android:id="@+id/radiolay"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+android:visibility="gone"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/msg_in">
+            <TextView android:id="@+id/radioq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Select your gender"/>
+            <RadioGroup android:id="@+id/rgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioq"
+                android:layout_marginTop="5dp"
+    >
+                <RadioButton android:id="@+id/radiob1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButtonStyle"
+                    />
+                <RadioButton android:id="@+id/radiob2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButtonStyle"
+                   />
+                </RadioGroup>
+            </RelativeLayout>
+        <RelativeLayout android:id="@+id/spinnerlay"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+android:visibility="gone"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/msg_in">
+            <TextView android:id="@+id/spinnerq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+             />
+            <Spinner
+                android:id="@+id/cntrySP"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:layout_below="@+id/spinnerq"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/checkboxlay"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+android:visibility="gone"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/msg_in">
+            <TextView android:id="@+id/checkboxq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Select nearby cities"
+                />
+           <LinearLayout android:id="@+id/cities"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_below="@+id/checkboxq"
+               android:layout_height="wrap_content">
+               </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/datepickerlay"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/msg_in">
+            <TextView android:id="@+id/datepickerq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Click here to select your date of birth"
+                />
+          <TextView android:id="@+id/datebirth"
+              android:layout_below="@+id/datepickerq"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+
+              android:layout_centerHorizontal="true"
+              android:textStyle="italic"
+              android:textColor="@android:color/primary_text_light"
+              android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+       <!-- <com.example.dell13.chatbotdummy.Typewriter
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/msg_in"
+            tools:text="Hello bubblesghgh jhjhjhjhj ghgh hghgh hghgh nghg hghgjjj hghhghghghghghghghghghghghghghfgh!"
+            android:textColor="@android:color/primary_text_light" />-->
+    </RelativeLayout>
+
+</LinearLayout>
