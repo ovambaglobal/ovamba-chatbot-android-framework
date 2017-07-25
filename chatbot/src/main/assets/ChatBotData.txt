@@ -1,16 +1,13 @@
 { "botdata": [
-
-        { "question":"Hi! Welcome to ChatBot Library!","type":"1","answer":"","regex":""},
-        { "question":"How are you","type":"1","answer":"","regex":""},
-        { "question":"Please provide your first name","type":"1","answer":"","regex":""},
-        { "question":"Please provide your last name","type":"1","answer":"","regex":""},
-
+        { "question":"Please enter your registered email address","type":"1","input":"32","answer":"","regex":"[a-zA-Z0-9\+\.\_\%\-\+]{1,256}\@[a-zA-Z0-9][a-zA-Z0-9\-]{0,64}(\.[a-zA-Z0-9][a-zA-Z0-9\-]{0,25})+"},
+        { "question":"Please enter your password","type":"1","input":"1","answer":"","regex":"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d!@#$%-^&*()_+]{8,}$"},
         { "question":"Select your gender ","type":"2","answer":"","regex":"","option1":"Male","option2":"Female"},
-        { "question":"Please provide your mobile number","type":"1","answer":"","regex":"[0-9]+"},
-        { "question":"Select your city","type":"3","answer":"","regex":"","options":[{ "option":"Select City"},{ "option":"Bareilly"},{ "option":"Jaipur"},{ "option":"Delhi"},{ "option":"Noida"}]},
-        { "question":"What is your company's name!","type":"1","answer":"","regex":""},
-        { "question":"Select your favourite cities","type":"4","answer":"","regex":"","options":[{ "option":"Bareilly"},{ "option":"Jaipur"},{ "option":"Delhi"},{ "option":"Noida"}]},
+        { "question":"Please provide your mobile number","type":"1","input":"2","answer":"","regex":"[0-9]+"},
+        { "question":"Select your city","type":"3","answer":"","regex":"","options":[{ "option":"Select City","id":"0"},{ "option":"Bareilly","id":"1"},{ "option":"Jaipur","id":"2"},{ "option":"Delhi","id":"3"},{ "option":"Noida","id":"4"}]},
+        { "question":"What is your company's name!","type":"1","input":"96","answer":"","regex":""},
+        { "question":"Select your favourite cities","type":"4","answer":"","regex":"","options":[{ "option":"Bareilly","id":"1"},{ "option":"Jaipur","id":"2"},{ "option":"Delhi","id":"3"},{ "option":"Noida","id":"4"}]},
         { "question":"Click here to select your date of birth","type":"5","answer":"","regex":""},
+        { "question":"Please upload any document","type":"6","answer":"","regex":""},
         { "question":"Please confirm all the information entered is correct ","type":"2","answer":"","regex":"","option1":"Yes","option2":"No"}
-    ]
+        ]
 }

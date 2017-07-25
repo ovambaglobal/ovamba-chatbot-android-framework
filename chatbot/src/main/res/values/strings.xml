@@ -2,5 +2,11 @@
     <string name="app_name">ChatBot</string>
     <string name="enter_wrong">It seems you have entered something wrong,Please enter again correct data.</string>
     <string name="congrts">Congrats !You are registered successfully.</string>
-
+    <string name="not_spoken">Please try again. This time you have not spoken anything.</string>
+    <string name="try_again">Please try again.</string>
+    <string name="network_issue">Please connect to internet.</string>
+    <string name="record_audio_is_required">We will only use the Record Audio Permission in order to use the Speech to Text Feature</string>
+    <string name="ftrdate">Please select future date</string>
+    <string name="image_size_error">File mustn\'t be more than 1 MB</string>
+    <string name="valid_format">Please upload the valid format documents.</string>
 </resources>

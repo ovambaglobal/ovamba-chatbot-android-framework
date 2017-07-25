@@ -1,7 +1,7 @@
 package com.sample.chatbotlib;
 
 /**
- * Created by Marco on 10/10/2014.
+ * Created by Priyanka on 10/10/2014.
  */
 
 import android.content.Context;
@@ -192,7 +192,6 @@ public class CircleImageView extends ImageView {
             return null;
         }
     }
-
 
 
     private void setup() {

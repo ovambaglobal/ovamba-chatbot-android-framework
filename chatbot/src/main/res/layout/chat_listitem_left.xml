@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="wrap_content" >
 
     <RelativeLayout
@@ -21,7 +22,7 @@
             android:layout_height="54dp"
             app:border_width="2dp"
             app:border_color="@android:color/white"
-            android:src="@drawable/chat_bot"/>
+            android:src="@drawable/ic_bot"/>
         <ImageView android:id="@+id/edit"
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -86,9 +87,11 @@ android:visibility="gone"
             <Spinner
                 android:id="@+id/cntrySP"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:overScrollMode="never"
                 android:scrollbars="none"
+                android:background="@android:color/transparent"
+                android:popupBackground="#FFFFFF"
                 android:layout_below="@+id/spinnerq"
                 android:spinnerMode="dropdown" />
         </RelativeLayout>
@@ -118,7 +121,7 @@ android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_marginLeft="5dp"
-
+android:visibility="gone"
             android:layout_toRightOf="@+id/image_view"
             android:background="@drawable/msg_in">
             <TextView android:id="@+id/datepickerq"
@@ -136,6 +139,125 @@ android:visibility="gone"
               android:textStyle="italic"
               android:textColor="@android:color/primary_text_light"
               android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/docbrowselay"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+android:visibility="gone"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/msg_in">
+            <TextView android:id="@+id/docbrowseq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Business Registration Certificate"
+                />
+            <RelativeLayout android:id="@+id/lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_below="@+id/docbrowseq">
+            <ImageView android:id="@+id/browse"
+                android:layout_height="@dimen/margin_30dp"
+                android:layout_width="@dimen/margin_30dp"
+                android:src="@drawable/select"
+
+          />
+            <ImageView android:id="@+id/takepic"
+                android:layout_height="@dimen/margin_30dp"
+                android:layout_width="@dimen/margin_30dp"
+                android:src="@drawable/cam"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_toRightOf="@+id/browse"/>
+                </RelativeLayout>
+            <TextView android:id="@+id/docpath"
+                android:layout_below="@+id/lay"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:layout_marginTop="@dimen/margin_10dp"
+android:textSize="@dimen/margin_12dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"
+                android:textColor="@android:color/primary_text_light"
+               />
+        </RelativeLayout>
+    <RelativeLayout android:id="@+id/catsubcatlay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+
+        android:layout_toRightOf="@+id/image_view"
+        android:background="@drawable/msg_in">
+        <TextView android:id="@+id/catq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Select Category"
+            />
+        <Spinner
+            android:id="@+id/catSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:background="@android:color/transparent"
+            android:popupBackground="#FFFFFF"
+            android:layout_below="@+id/catq"
+            android:spinnerMode="dropdown" />
+        <TextView android:id="@+id/subcatq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/catSP"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="Select Subcategory"
+            />
+        <Spinner
+            android:id="@+id/subcatSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:background="@android:color/transparent"
+            android:popupBackground="#FFFFFF"
+            android:layout_below="@+id/subcatq"
+            android:spinnerMode="dropdown" />
+        <TextView android:id="@+id/catradioq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subcatSP"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/margin_10dp"
+
+            android:text="Have other products?"/>
+        <RadioGroup android:id="@+id/rgroupcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/catradioq"
+            android:layout_marginTop="5dp"
+            >
+            <RadioButton android:id="@+id/catradiob1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:enabled="true"
+
+                android:theme="@style/RadioButtonStyle"
+                />
+            <RadioButton android:id="@+id/catradiob2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/RadioButtonStyle"
+                android:text="No"
+                android:enabled="true"
+                />
+        </RadioGroup>
         </RelativeLayout>
        <!-- <com.example.dell13.chatbotdummy.Typewriter
             android:id="@+id/text"

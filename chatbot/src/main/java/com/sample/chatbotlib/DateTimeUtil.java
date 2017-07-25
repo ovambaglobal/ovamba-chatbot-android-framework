@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Created by Anand on 10-03-2016.
+ * Created by Priyanka on 10-03-2016.
  */
 public class DateTimeUtil {
 
@@ -29,14 +29,14 @@ public class DateTimeUtil {
         return cal.getTime();
     }
 
-    public static String dateStringFromMillis(long timeMillis,String dateFormat){
-        SimpleDateFormat sdf=new SimpleDateFormat(dateFormat);
+    public static String dateStringFromMillis(long timeMillis, String dateFormat) {
+        SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
         return sdf.format(timeMillis);
     }
 
 
     public static Date convertStringToDate(String date, SimpleDateFormat dateFormat) {
-      //  SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+        //  SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
         try {
             return dateFormat.parse(date);
         } catch (ParseException e) {
